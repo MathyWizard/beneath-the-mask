@@ -2,12 +2,16 @@ body {
     background-color: #f00003;
 }
 
-#player {
+#play-button {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 7px 7px;
+    width: 199px;
+    height: 198px;
+    background-image: url("../images/play-button.png");
+    background-size: cover;
+    cursor: pointer;
 }
 
 #weather-icon {

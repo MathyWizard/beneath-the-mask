@@ -21,9 +21,12 @@
         <script src="https://www.youtube.com/iframe_api"></script>
         <script src="js/config.js"></script>
         <script src="js/weather.js"></script>
-        <script src="js/vid.js"></script>
+        <!-- TODO: come up with better names for these bruh -->
+        <script src="js/audioPlayer.js"></script>
+        <script src="js/audio.js"></script>
+        <!-- -->
+        <script src="js/playButton.js"></script>
         <script src="js/calendar.js"></script>
-        <script src="js/btmIds.js"></script>
     </head>
     <body>
         <div id="calendar">
@@ -37,7 +40,7 @@
             ></canvas>
         </div>
 
-        <div id="player"></div>
+        <div id="play-button"></div>
 
         <img id="weather-icon" onclick="weatherConfirm()" />
     </body>
@@ -50,5 +53,8 @@
 
         // same thing for the calendar element...
         displayCalendar();
+
+        // and same thing for the play button...
+        initializePlayButton();
     </script>
 </html>
